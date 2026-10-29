@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Font1';
+  src: url('fonts/type.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font2';
+  src: url('fonts/another.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('fonts/random.ttf') format('truetype');
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Font2', Georgia, serif;
+}
+
+/* One centred column that holds everything */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.page h1 {
+  margin: 0;
+  font-family: 'HeaderFont', Georgia, serif;
+  font-size: clamp(5rem, 6vw, 3.5rem);
+}
+
+.page img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 65ch;
+  font-family:'Font1'
+}
+
+.back {
+  align-self: flex-start;
+  color: #000000;
+  font-size: 1rem;
+}
